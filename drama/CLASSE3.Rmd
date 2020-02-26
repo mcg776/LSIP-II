@@ -55,5 +55,23 @@ x[-(x%%2==1)]
 ```{r}
 ##factors
 fac=factor(c(5, 9 , 3,4))
+##pendent
+```
+```{r}
+x
+milista=list(suma=sum(x), media= mean(x))
+milista
+```
+```{r}
+M = matrix(1:9, nrow=3, byrow  =TRUE) ##escriu en files
+M
+N = matrix(1:9, nrow=3, byrow  =FALSE)##escriu en columnes
+N
+H=rbind(c(1,3,5), c(3,4,7))
+H ##cbind ho escriu en columnes!!!
+M[1, 3]
+M[3, ] ##Mostrar files columnes o elements
+diag(M) ##la diagonal
+
 ```
 

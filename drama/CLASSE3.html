@@ -426,6 +426,41 @@ x[-3]</code></pre>
 <pre><code>## [1] 1 3 5 7 9</code></pre>
 <pre class="r"><code>x[-(x%%2==1)]</code></pre>
 <pre><code>## [1]  2  3  4  5  6  7  8  9 10</code></pre>
+<pre class="r"><code>##factors
+fac=factor(c(5, 9 , 3,4))
+##pendent</code></pre>
+<pre class="r"><code>x</code></pre>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+<pre class="r"><code>milista=list(suma=sum(x), media= mean(x))
+milista</code></pre>
+<pre><code>## $suma
+## [1] 55
+## 
+## $media
+## [1] 5.5</code></pre>
+<pre class="r"><code>M = matrix(1:9, nrow=3, byrow  =TRUE) ##escriu en files
+M</code></pre>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    2    3
+## [2,]    4    5    6
+## [3,]    7    8    9</code></pre>
+<pre class="r"><code>N = matrix(1:9, nrow=3, byrow  =FALSE)##escriu en columnes
+N</code></pre>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    4    7
+## [2,]    2    5    8
+## [3,]    3    6    9</code></pre>
+<pre class="r"><code>H=rbind(c(1,3,5), c(3,4,7))
+H ##cbind ho escriu en columnes!!!</code></pre>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    3    4    7</code></pre>
+<pre class="r"><code>M[1, 3]</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>M[3, ] ##Mostrar files columnes o elements</code></pre>
+<pre><code>## [1] 7 8 9</code></pre>
+<pre class="r"><code>diag(M) ##la diagonal</code></pre>
+<pre><code>## [1] 1 5 9</code></pre>
 
 
 
