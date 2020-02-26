@@ -1,0 +1,59 @@
+---
+title: "Classe"
+author: "Maria Coll"
+date: "26/2/2020"
+output: html_document
+---
+
+```{r}
+c(1,2,3)
+bolas = c(rep ("Roja", 7), rep("Azul", 3))
+neixament = rep(2001, 7)
+vec=c(16,0,1,20,1,7,88,5,1,9)
+vec
+bolas
+neixament
+```
+
+
+```{r}
+##Secuencias
+seq(2,40,by=2)
+x=seq(17,98, length.out = 30)
+round(seq(17,98, length.out = 30), 4)##el 4 son les xifes a arredonir
+sin(seq(17,98, length.out = 30))
+sapply(seq(17,98, length.out = 30), FUN=sin)
+
+x=seq(1,10, by=1)
+```
+```{r}
+##el canvi de paramentres de fix(x sols es fa abaix)
+x
+```
+
+
+```{r}
+##es veu abaix tot també
+##manera de guardar la funció
+mifuncion= function(x){
+  (x^2-1)/(x^2+1)
+}
+##meneres de mostrar-la
+mifuncion(x)
+sapply(x, FUN=mifuncion)
+```
+
+
+```{r}
+##eliminar elements
+x[-3]
+x[-(3:5)]
+x[x%%2==1]
+x[-(x%%2==1)]
+```
+
+```{r}
+##factors
+fac=factor(c(5, 9 , 3,4))
+```
+
