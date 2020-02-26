@@ -77,7 +77,7 @@ M%*%N##PRODUCTE DE MATRIUS
 M%%7 
 det(M)
 qr(N)$rank
-solve(N)## TE SURT L'ERROR, RANG 2
+#solve(N)## TE SURT L'ERROR, RANG 2
 eigen(M)## Valors propis i vectors propis per columnes
 eigen(M)$values
 eigen(M)$vectors[ ,1]##tries columnes
@@ -87,8 +87,8 @@ eigen(M)$vectors[ ,1]##tries columnes
 ##gràfiques
 alum=c(seq(1,10, by=1))
 notas=c(seq(1,10, by=1))
-main(Escala)##??????
-plot(alum , notas)
+#main(Escala)##??????
+plot(alum , notas, main = "TITULO")
 
 ```
 
