@@ -65,7 +65,7 @@ milista
 ```{r}
 M = matrix(1:9, nrow=3, byrow  =TRUE) ##escriu en files
 M
-N = matrix(1:9, nrow=3, byrow  =FALSE)##escriu en columnes
+N = matrix(1:9, nrow=3, byrow  =FALSE) ##escriu en columnes
 N
 H=rbind(c(1,3,5), c(3,4,7))
 H ##cbind ho escriu en columnes!!!
@@ -74,7 +74,7 @@ M[3, ] ##Mostrar files columnes o elements
 diag(M) ##la diagonal
 t(H)
 M%*%N##PRODUCTE DE MATRIUS
-M%%7
+M%%7 
 det(M)
 qr(N)$rank
 solve(N)## TE SURT L'ERROR, RANG 2
