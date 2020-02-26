@@ -72,6 +72,8 @@ H ##cbind ho escriu en columnes!!!
 M[1, 3]
 M[3, ] ##Mostrar files columnes o elements
 diag(M) ##la diagonal
+t(H)
+M%*%N##PRODUCTE DE MATRIUS
 
 ```
 
