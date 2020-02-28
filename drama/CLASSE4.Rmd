@@ -1,0 +1,29 @@
+---
+title: "CLASSE4"
+author: "Maria Coll"
+date: "28/2/2020"
+output: html_document
+---
+
+```{r}
+##Veure el Rmd que penjarà a la clase amb certs paquets
+head(crimtab,3) ##per veure sols els 3 primers elements.
+```
+
+```{r}
+iris
+```
+```{r}
+head(iris, 3)
+```
+
+```{r}
+tail(iris, 4)##els darrers
+str(iris) ##estructura
+names(iris)##noms
+```
+```{r}
+
+```
+
+
