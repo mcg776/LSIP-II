@@ -18,12 +18,133 @@ head(iris, 3)
 ```
 
 ```{r}
-tail(iris, 4)##els darrers
-str(iris) ##estructura
-names(iris)##noms
+str(Orange)##data frame de taronja.
 ```
 ```{r}
-
+##mirar factors
 ```
+##Obtenir informació del data frame!!
+```{r}
+dimnames(iris)
+```
+```{r}
+dim(iris)##num dels elements del dimnames
+```
+```{r}
+iris$Sepal.Width ##tiram els elements del data flame
+```
+```{r}
+mean(iris$Sepal.Width)
+```
+```{r}
+iris
+```
+```{r}
+iris$Species == "setosa" ##vector de 150 elements, els mateixos de les files
+```
+```{r}
+iris[iris$Species == "setosa",]
+```
+
+```{r}
+## Error: mean(iris[iris$Species == "setosa", 1])
+```
+```{r}
+##url de una pagina web
+contaminacio = read.table("https://maitra.public.iastate.edu/stat501/datasets/LAX-air-pollution.dat")
+contaminacio
+```
+```{r}
+names(contaminacio)
+```
+```{r}
+head(contaminacio, 2)
+```
+```{r}
+##sringsAsFactors=FALSE
+```
+##Lletgir diferents tipus de fitxers
+##Exportar dades a fitxers
+##Construir un data frames
+```{r}
+contaminacio$Novacolumna = rep(1)
+contaminacio
+```
+```{r}
+contaminacio$Novacolumna2 = rep(4 )
+contaminacio
+```
+```{r}
+iris
+##aggregate(Sepal.Lenght ~ Species, data = iris, FUN = max)
+```
+```{r}
+datos=read.table("C://Users/maria/Desktop/LSIP II/Teoria/r-basic/data/EnergyDrink")
+head(datos) 
+```
+```{r}
+summary(datos) ##Resum, taula de freqüències absolutes de cad variable
+```
+```{r}
+apply(datos, MARGIN=2, FUN=table)
+```
+```{r}
+table(datos) ##en aquest cas és de tres elements
+```
+```{r}
+table(datos[c(1,3)])
+```
+```{r}
+ftable(datos)
+```
+```{r}
+##Diagrama de barres
+barplot(table(datos$estudio)) #barplot estan separades i un histograma no.
+```
+```{r}
+barplot(table(datos$sexo), col=c("blue","pink"), main= "Diagrama del sexe" )
+```
+```{r}
+barplot(prop.table(table(datos$bebe)), ylab="proporción")
+```
+```{r}
+barplot(table(datos$bebe, datos$estudio), legend.text=TRUE)
+```
+```{r}
+barplot(table(datos$estudio, datos$bebe), legend.text=TRUE, col=c("yellow", "green"))
+```
+```{r}
+pie(table(datos$estudio), col=c("white", "red"))
+```
+```{r}
+##Diagrama de mosaico:
+mosaicplot(table(datos), col=c("lightblue", "pink"))
+```
+```{r}
+mosaicplot(table(datos$estudio, datos$sexo, datos$bebe), col=c("lightgreen", "red"))##especte si beu.
+```
+```{r}
+HairEyeColor
+```
+```{r}
+ls()
+rm(list = ls())
+Bebidasenergeticas = read.table("../../../Teoria/r-basic/data/EnergyDrink")
+Bebidasenergeticas
+```
+```{r}
+table(Bebidasenergeticas)
+```
+```{r}
+summary(Bebidasenergeticas)
+```
+```{r}
+apply(Bebidasenergeticas, MARGIN = 2, FUN = table)
+```
+
+
+
+
+
 
 
