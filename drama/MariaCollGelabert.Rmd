@@ -1,0 +1,10 @@
+---
+title: "Taller evaluable - Estadistica descriptiva"
+author: "Maria Coll"
+date: "1/4/2020"
+output: html_document
+---
+```{r}
+
+```
+
